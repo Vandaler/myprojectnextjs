@@ -1,0 +1,45 @@
+/* Style for the header and navigation container */
+.header {
+  background-color: skyblue;
+  padding: 10px auto;
+  margin: auto;
+  text-align: center;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  gap: 10px; /* Adds spacing between items */
+}
+
+.navLink {
+  color: blue;
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size for better readability */
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navLink {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .navLink {
+    font-size: 16px; /* Medium font size for tablets */
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .navLink {
+    font-size: 18px; /* Default font size for desktops */
+  }
+}

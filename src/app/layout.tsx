@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import  "bootstrap/dist/css/bootstrap.min.css"
+import styles from "./style.module.css";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,8 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
-          <Link href='../'>Home</Link>{" - "}<Link href='/student'>Student</Link>{" - "}<Link href='/pokemon'>Pokemon</Link>
+        <div className={styles.header}>
+          <h1 className="text-center">Next Js Project</h1>
+          <div className={styles.navContainer}>
+          <Link legacyBehavior href='../'><a className={styles.navLink}>Home</a></Link>
+          {/* {" - "}<Link legacyBehavior href='/student'><a className={styles.navLink}>Student</a></Link> */}
+          {" - "}<Link legacyBehavior href='/pokemon'><a className={styles.navLink}>Pokemon</a></Link>
+          {" - "}<Link legacyBehavior href='/aboutme'><a className={styles.navLink}>About Me</a></Link>
+          </div>
         </div>
         {children}</body>
     </html>
