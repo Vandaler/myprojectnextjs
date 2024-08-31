@@ -4,7 +4,6 @@ import React, { useState , useEffect} from "react";
 import "./../../globals.css";
 import "./poke.css"
 import Image from "next/image";
-import  "bootstrap/dist/css/bootstrap.min.css"
 import EmojiComponent from "../emoji";
 
 interface PokemonDetails {
