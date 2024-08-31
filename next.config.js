@@ -7,6 +7,12 @@ module.exports = {
           port: '',
           pathname: '/PokeAPI/sprites/**',
         },
+        {
+          protocol: 'https',
+          hostname: 'scontent.fbkk5-6.fna.fbcdn.net',
+          port: '',
+          pathname: '/v/**',
+        }
       ],
     },
   };

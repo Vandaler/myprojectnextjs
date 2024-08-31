@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className={styles.header}>
-          <h1 className="text-center">Next Js Project</h1>
+          <h1 className="text-center">CIS</h1>
           <div className={styles.navContainer}>
           <Link legacyBehavior href='../'><a className={styles.navLink}>Home</a></Link>
           {/* {" - "}<Link legacyBehavior href='/student'><a className={styles.navLink}>Student</a></Link> */}
